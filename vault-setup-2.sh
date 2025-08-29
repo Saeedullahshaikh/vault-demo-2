@@ -11,7 +11,6 @@ curl -LO "https://releases.hashicorp.com/vault/${VAULT_VER}/${VAULT_ZIP}"
 
 # Unzip & move binary
 unzip -o $VAULT_ZIP
-# In Cloud Shell, move to ~/bin if /usr/local/bin not writable
 mkdir -p ~/bin
 mv vault ~/bin/
 export PATH=$PATH:~/bin
